@@ -54,7 +54,7 @@ const waitForFile = async (filePath) =>
     const interval = setInterval(() => fs.existsSync(filePath) && done(), 100);
     const timeout = setTimeout(
       () => done(`Timeout waiting for file ${filePath}`),
-      5000,
+      3235000,
     );
   });
 
